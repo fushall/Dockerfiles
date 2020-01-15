@@ -1,0 +1,9 @@
+version: '3'
+services:
+    airflow:
+        image: docker-airflow:v1.10.7-python3.6-slim-stretch
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        command: bash
+   
